@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/build.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="/assets/js/mobile-menu.js"></script>
+    <title>Homepage</title>
+</head>
+<body>
+  <!--header start-->
+  <header class="sticky top-0 body-font z-50 text-gray-400 bg-header backdrop-blur-sm">
+    <nav class="relative container px-5 py-5 mx-auto flex justify-between items-center body-font">
+      <!-- logo --> 
+      <a class="text-3xl leading-none" href="#">
+          <svg class="h-10" alt="logo" viewBox="0 0 100 100">
+             <path style=" stroke:none;fill-rule:nonzero;fill:rgb(230, 230, 230);fill-opacity:1;" d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z"></path>
+          </svg>
+      </a>
+
+      <!-- Desktop Menu Items start -->
+       <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+          <li><a class="text-blue-500 capitalize text-lg font-bold hover:text-blue-500" href="/index.html">Home</a></li>
+          <li class="text-gray-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+             </svg>
+          </li>
+          <li><a class="text-blue-500 capitalize text-lg font-bold hover:text-blue-500" href="/pages/medical-services.html">What We Treat</a></li>
+          <li class="text-gray-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+             </svg>
+          </li>
+          <li><a class="text-blue-500 capitalize text-lg font-bold hover:text-blue-500" href="/pages/about-us.html">About Us</a></li>
+          <li class="text-gray-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+             </svg>
+          </li>
+          <li><a class="text-blue-500 capitalize text-lg font-bold hover:text-blue-500" href="/pages/contact-us.html">Contact Us</a></li>
+          <!-- <li class="text-gray-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+             </svg>
+          </li>
+          <li><a class="text-blue-600 capitalize text-lg font-bold hover:text-blue-500" href="#">Support</a></li> -->
+       </ul>
+      <!-- Desktop Menu Items End -->
+
+      <!-- Appointment button -->
+      <a href="/book-appointment.html" >
+        <button class="inline-flex rounded border-0 bg-blue-500 py-2 md:px-6 px-2 md:text-lg text-sm text-white hover:bg-blue-600 focus:outline-none">
+        Schedule Appointment</button>
+      </a>
+
+      <!-- Mobile Menu Icon Start -->
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-gray-700 p-3">
+           <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+           </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu Icon End -->
+    </nav>
+    
+  </header>
+  <!-- Header end -->
+
+  <!-- Mobile Menu Items Sidebar Start -->
+  <div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-600 opacity-80"></div>
+      <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+        <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <svg class="h-12" alt="logo" viewBox="0 0 100 100">
+                  <path d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z"></path>
+              </svg>
+            </a>
+            <button class="navbar-close">
+              <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+        </div>
+        <div>
+            <ul>
+              <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="index.html">Home</a>
+              </li>
+              <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="/pages/medical-services.html">What We Treat</a>
+              </li>
+              <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="/pages/about-us.html">About Us</a>
+              </li>
+              <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="/pages/contact-us.html">Contact Us</a>
+              </li>
+              <!-- <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Support</a>
+              </li> -->
+            </ul>
+            <div class="pt-6">
+              <a class="block px-4 py-3 mb-2 leading-loose text-center text-lg font-semibold text-white bg-blue-700 hover:bg-blue-50 hover:text-blue-800 hover:border-2 hover:border-blue-500 rounded-xl" href="/book-appointment.html">Book Appointment</a>
+            </div>
+        </div>
+        <div class="mt-auto">
+            
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © 2021</span>
+            </p>
+        </div>
+      </nav>
+  </div>
+  <!-- Mobile Menu Items Sidebar End -->
+ 
+    <!--body content start-->
+
+    <section class="body-font text-gray-600">
+      <div class="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
+        <div
+          class="mb-16 flex flex-col items-center space-y-10 text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
+        >
+          <h1
+            class="title-font text-3xl font-medium text-gray-900 sm:text-4xl"
+          >
+            ENT Care for Patient of All Ages
+            <br class="hidden lg:inline-block" />
+          </h1>
+          <p class="leading-relaxed">
+            Ruparel ENT Speciality hospital is a reliable and trusted medical
+            solution for any ear, nose or throat conditions.
+          </p>
+          <div class="flex justify-center">
+            <button
+              class="inline-flex rounded border-0 bg-blue-500 py-2 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none"
+            >
+              Schedule Appointment
+            </button>
+          </div>
+        </div>
+        <div class="w-5/6 md:w-1/2 lg:w-full lg:max-w-lg">
+          <img
+            class="rounded object-cover object-center"
+            alt="hero"
+            src="https://dummyimage.com/720x600"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="body-font text-gray-600">
+      <div class="container mx-auto px-5 py-24">
+        <div class="flex flex-col">
+          <div class="h-1 overflow-hidden rounded bg-gray-200">
+            <div class="h-full w-24 bg-blue-500"></div>
+          </div>
+          <div class="mb-12 flex flex-col flex-wrap py-6 sm:flex-row">
+            <h1
+              class="title-font mb-2 text-2xl font-medium text-gray-900 sm:mb-0 sm:w-2/5"
+            >
+              Excellent Care of Priceless Senses
+            </h1>
+            <p class="pl-0 text-base leading-relaxed sm:w-3/5 sm:pl-10">
+              Our specialists meet and collaborate in this fashion to provide a
+              full diagnosis and treatment to the patient. Cases of congenital
+              deformities, serious traumas requiring surgical repair, and
+              oncological surgery involving the entire head and neck region are
+              also seen at our ENT center.
+            </p>
+          </div>
+        </div>
+        <div class="-m-4 flex flex-wrap justify-center text-center">
+          <div class="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
+            <div
+              class="flex h-full flex-col items-center justify-center rounded-lg border-2 border-gray-200 px-4 py-6 shadow-lg hover:shadow-sm"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="mb-3 inline-block h-12 w-12 text-blue-500"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                <path
+                  d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"
+                ></path>
+              </svg>
+              <h2 class="title-font text-lg font-semibold text-gray-900">
+                Ear Treatments
+              </h2>
+              <p class="leading-relaxed"></p>
+            </div>
+          </div>
+          <div class="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
+            <div
+              class="flex h-full flex-col items-center justify-center rounded-lg border-2 border-gray-200 px-4 py-6 shadow-lg hover:shadow-sm"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="mb-3 inline-block h-12 w-12 text-blue-500"
+                viewBox="0 0 24 24"
+              >
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+              </svg>
+              <h2 class="title-font text-lg font-semibold text-gray-900">
+                Nose Treatments
+              </h2>
+              <p class="leading-relaxed"></p>
+            </div>
+          </div>
+          <div class="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
+            <div
+              class="flex h-full flex-col items-center justify-center rounded-lg border-2 border-gray-200 px-4 py-6 shadow-lg hover:shadow-sm"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="mb-3 inline-block h-12 w-12 text-blue-500"
+                viewBox="0 0 24 24"
+              >
+                <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                <path
+                  d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
+                ></path>
+              </svg>
+              <h2 class="title-font text-lg font-semibold text-gray-900">
+                Throat Treatments
+              </h2>
+              <p class="leading-relaxed"></p>
+            </div>
+          </div>
+          <div class="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
+            <div
+              class="flex h-full flex-col items-center justify-center rounded-lg border-2 border-gray-200 px-4 py-6 shadow-lg hover:shadow-sm"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="mb-3 inline-block h-12 w-12 text-blue-500"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h2 class="title-font text-lg font-semibold text-gray-900">
+                Head & Neck Cancer Treatments
+              </h2>
+              <p class="leading-relaxed"></p>
+            </div>
+          </div>
+          <div class="m:w-1/2 w-full p-4 md:w-1/3 lg:w-1/5">
+            <div
+              class="flex h-full flex-col items-center justify-center rounded-lg border-2 border-gray-200 px-4 py-6 shadow-lg hover:shadow-sm"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="mb-3 inline-block h-12 w-12 text-blue-500"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h2 class="title-font text-lg font-semibold text-gray-900">
+                Vertigo Treatments
+              </h2>
+              <p class="leading-relaxed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-font space-y-10 text-gray-600">
+      <div class="container mx-auto px-5 py-24">
+        <div class="container mx-auto flex flex-col px-5 pb-24 md:flex-row">
+          <div
+            class="mx-auto drop-shadow-lg mb-10 w-5/6 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg"
+          >
+            <img
+              class="rounded object-cover object-center"
+              alt="hero"
+              src="https://dummyimage.com/720x600"
+            />
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center space-y-10 md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24"
+          >
+          <h1 class="title-font text-2xl font-medium text-gray-900 sm:text-3xl">We're Setting Standards in Clinical Care</h1>
+            <p class="leading-relaxed">
+              It is a great pleasure to welcome you to ENT hospital in
+              Ahmedabad. We are a medical center that specializes in the
+              diagnosis, treatment of Ear, Nose, and Throat (ENT) medical
+              conditions with or without surgeries in both children and adults.
+              In many areas of otorhinolaryngology, our ENT Clinic has been a
+              pioneer.
+            </p>
+            <p class="leading-relaxed">
+              Our ENT Clinic Service examines bone, muscle, and nerve
+              abnormalities of the skull, face, and head and neck, as well as
+              the prevention, diagnosis, treatment, and rehabilitation of both
+              congenital and acquired diseases. Every case is assessed by a
+              multidisciplinary team, with the goal of determining the best
+              treatment for each pathology.
+            </p>
+            <div class="flex justify-center">
+              <button
+                class="inline-flex drop-shadow-lg rounded border-0 bg-blue-500 py-2 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none"
+              >
+                More About Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-font bg-gray-900 text-gray-400">
+      <div
+        class="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row"
+      >
+        <div
+          class="mb-6 flex w-full flex-col pr-0 text-center md:mb-0 md:w-auto md:pr-10 md:text-left"
+        >
+          <h2
+            class="title-font mb-1 text-xs font-medium tracking-widest text-blue-400"
+          >
+            Need a Doctor for Check-up?
+          </h2>
+          <h1 class="title-font text-2xl font-medium text-white md:text-3xl">
+            24x7 Emergency Support
+          </h1>
+        </div>
+        <div
+          class="mx-auto flex flex-shrink-0 items-center space-x-4 md:ml-auto md:mr-0"
+        >
+          <button
+            class="ml-4 shadow-white drop-shadow-sm inline-flex rounded border-0 bg-gray-100 py-2 px-6 text-lg font-semibold text-gray-700 hover:bg-gray-200 focus:outline-none"
+          >
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-font text-gray-600">
+      <div class="container mx-auto px-5 py-24">
+        <h1
+          class="title-font mb-12 text-center text-3xl font-medium text-gray-900"
+        >
+          Happy Patients
+        </h1>
+        <div class="-m-4 flex flex-wrap">
+          <div class="w-full p-4 md:w-1/2">
+            <div class="h-full rounded bg-gray-100 p-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="mb-4 block h-5 w-5 text-gray-400"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="mb-6 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                ducimus, aut voluptas laudantium doloribus inventore quidem,
+                temporibus, illum quod consequatur neque modi enim!
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="https://dummyimage.com/106x106"
+                  class="h-12 w-12 flex-shrink-0 rounded-full object-cover object-center"
+                />
+                <span class="flex flex-grow flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Holden Caulfield</span
+                  >
+                  <span class="text-sm text-gray-500">UI DEVELOPER</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="w-full p-4 md:w-1/2">
+            <div class="h-full rounded bg-gray-100 p-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="mb-4 block h-5 w-5 text-gray-400"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="mb-6 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                ducimus, aut voluptas laudantium doloribus inventore quidem,
+                temporibus, illum quod consequatur neque modi enim!
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="https://dummyimage.com/107x107"
+                  class="h-12 w-12 flex-shrink-0 rounded-full object-cover object-center"
+                />
+                <span class="flex flex-grow flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Alper Kamu</span
+                  >
+                  <span class="text-sm text-gray-500">DESIGNER</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-font text-gray-600">
+      <div class="container mx-auto px-5 py-24">
+        <div class="flex flex-col">
+          <div class="h-1 overflow-hidden rounded bg-gray-200">
+            <div class="h-full w-24 bg-blue-500"></div>
+          </div>
+          <div class="mb-12 flex flex-col flex-wrap py-6 sm:flex-row">
+            <h1
+              class="title-font mb-2 text-2xl font-medium text-gray-900 sm:mb-0 sm:w-2/5"
+            >
+              Facilities at Clinic
+            </h1>
+            <p class="pl-0 text-base leading-relaxed sm:w-3/5 sm:pl-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              voluptate et facilis? Debitis fugiat autem labore amet dolores
+              quos omnis beatae velit odio?
+            </p>
+          </div>
+        </div>
+        <div class="-mx-4 -mb-10 -mt-4 flex flex-wrap sm:-m-4">
+          <div class="mb-6 p-4 text-center sm:mb-0 md:w-1/3">
+            <div class="h-64 overflow-hidden rounded-lg">
+              <img
+                alt="content"
+                class="h-full w-full object-cover object-center"
+                src="https://dummyimage.com/1203x503"
+              />
+            </div>
+            <h2 class="title-font mt-5 text-xl font-medium text-gray-900">
+              Surgical Facilities
+            </h2>
+            <!-- <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+              <a class="text-blue-500 inline-flex items-center mt-3">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a> -->
+          </div>
+          <div class="mb-6 p-4 text-center sm:mb-0 md:w-1/3">
+            <div class="h-64 overflow-hidden rounded-lg">
+              <img
+                alt="content"
+                class="h-full w-full object-cover object-center"
+                src="https://dummyimage.com/1204x504"
+              />
+            </div>
+            <h2 class="title-font mt-5 text-xl font-medium text-gray-900">
+              Pharmacy Support
+            </h2>
+            <!-- <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+              <a class="text-blue-500 inline-flex items-center mt-3">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a> -->
+          </div>
+          <div class="mb-6 p-4 text-center sm:mb-0 md:w-1/3">
+            <div class="h-64 overflow-hidden rounded-lg">
+              <img
+                alt="content"
+                class="h-full w-full object-cover object-center"
+                src="https://dummyimage.com/1205x505"
+              />
+            </div>
+            <h2 class="title-font mt-5 text-xl font-medium text-gray-900">
+              Top-Rated Medical Network
+            </h2>
+            <!-- <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+              <a class="text-blue-500 inline-flex items-center mt-3">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-font text-gray-600">
+      <div class="container mx-auto justify-center space-y-10 px-5 py-24">
+        <div class="mb-20 flex w-full flex-col space-y-10 text-center">
+          <h1
+            class="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl"
+          >
+            Your Team of ENT Specialists
+          </h1>
+          <p class="mx-auto text-base leading-relaxed lg:w-2/3">
+            We have the best set of professionals at Ruparel ENT speciality
+            hospital in Bopal, Ahmedabad, who specialize in the diagnosis and
+            treatment of ENT medical diseases in both newborns and adults, with
+            or without surgery.
+          </p>
+        </div>
+        <div class="-m-4 mx-auto flex flex-wrap justify-center">
+          <div class="p-4 md:w-1/3">
+            <div
+              class="h-full shadow-lg overflow-hidden rounded-lg border-2 border-gray-200 border-opacity-60 text-center"
+            >
+              <img
+                class="w-full object-cover object-center md:h-60 lg:h-auto"
+                src="/assets/images/Dr.Mohit-Ruparel.png"
+                alt="Dr. Mohit Ruparel"
+              />
+              <div class="p-6">
+                <h2
+                  class="title-font mb-1 text-xs font-medium tracking-widest text-gray-400"
+                >
+                  MS ENT
+                </h2>
+                <h1 class="title-font mb-3 text-lg font-medium text-gray-900">
+                  Dr. Mohit Ruparel
+                </h1>
+                <p class="mb-3 leading-relaxed"></p>
+                <div class="flex flex-wrap items-center justify-center">
+                  <a
+                    class="inline-flex items-center text-blue-500 md:mb-2 lg:mb-0"
+                    >Know More
+                    <svg
+                      class="ml-2 h-4 w-4"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div
+              class="h-full shadow-lg overflow-hidden rounded-lg border-2 border-gray-200 border-opacity-60 text-center"
+            >
+              <img
+                class="w-full object-cover object-center md:h-60 lg:h-auto"
+                src="/assets/images/Dr.B.N.Ruparel.png"
+                alt="Dr. Bhupendra Ruparel"
+              />
+              <div class="p-6">
+                <h2
+                  class="title-font mb-1 text-xs font-medium tracking-widest text-gray-400"
+                >
+                  DLO ENT
+                </h2>
+                <h1 class="title-font mb-3 text-lg font-medium text-gray-900">
+                  Dr. Bhupendra Ruparel
+                </h1>
+                <p class="mb-3 leading-relaxed"></p>
+                <div class="flex flex-wrap items-center justify-center">
+                  <a
+                    class="inline-flex items-center text-blue-500 md:mb-2 lg:mb-0"
+                    >Know More
+                    <svg
+                      class="ml-2 h-4 w-4"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mx-auto my-5 text-center text-base leading-relaxed lg:w-2/3">
+          We began with the goal of providing the finest possible service,
+          diagnosis, and treatment to children and adults suffering from
+          disorders of the ear, nose, paranasal sinuses, mouth, throat, neck,
+          and thyroid, among other things.
+        </p>
+        <div class="my-8 flex justify-center">
+          <button
+            class="inline-flex shadow-lg rounded border-0 bg-blue-500 py-2 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none"
+          >
+            Schedule Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Blog -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident?</h1>
+                <div class="flex items-center flex-wrap ">
+                  <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident?</h1>
+                <div class="flex items-center flex-wrap ">
+                  <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident?</h1>
+                <div class="flex items-center flex-wrap ">
+                  <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--body content end-->
+
+    <!-- footer start -->
+    <footer class="body-font text-gray-600">
+      <div
+        class="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start"
+      >
+        <div
+          class="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left"
+        >
+          <a
+            class="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start"
+          >
+            <div>
+              <a href="#"
+                ><img
+                  src="/assets/images/logo svg.svg"
+                  alt=""
+                  title=""
+                  class="mx-auto max-h-20"
+              /></a>
+            </div>
+          </a>
+        </div>
+        <div
+          class="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left"
+        >
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-gray-900"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-gray-900"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-gray-900"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-gray-900"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div
+          class="container mx-auto flex flex-col flex-wrap py-4 px-5 sm:flex-row"
+        >
+          <p class="text-center text-sm text-gray-500 sm:text-left">
+            © 2022 NilDevil —
+            <a
+              href="https://twitter.com/knyttneve"
+              rel="noopener noreferrer"
+              class="ml-1 text-gray-600"
+              target="_blank"
+              >@nilvaghela</a
+            >
+          </p>
+          <span
+            class="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start"
+          >
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>

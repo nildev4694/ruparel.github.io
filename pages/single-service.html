@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/build.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="/assets/js/mobile-menu.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+  <!--header start-->
+  <header class="sticky top-0 body-font z-50 text-gray-400 bg-header backdrop-blur-sm">
+    <nav class="relative container px-5 py-5 mx-auto flex justify-between items-center body-font">
+      <!-- logo --> 
+      <a class="text-3xl leading-none" href="#">
+          <svg class="h-10" alt="logo" viewBox="0 0 100 100">
+             <path style=" stroke:none;fill-rule:nonzero;fill:rgb(230, 230, 230);fill-opacity:1;" d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z"></path>
+          </svg>
+      </a>
+
+      <!-- Desktop Menu Items start -->
+       <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+          <li><a class="text-blue-500 capitalize text-lg font-bold hover:text-blue-500" href="/index.html">Home</a></li>
+          <li class="text-gray-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+             </svg>
+          </li>
+          <li><a class="text-blue-500 capitalize text-lg font-bold hover:text-blue-500" href="/pages/medical-services.html">What We Treat</a></li>
+          <li class="text-gray-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+             </svg>
+          </li>
+          <li><a class="text-blue-500 capitalize text-lg font-bold hover:text-blue-500" href="/pages/about-us.html">About Us</a></li>
+          <li class="text-gray-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+             </svg>
+          </li>
+          <li><a class="text-blue-500 capitalize text-lg font-bold hover:text-blue-500" href="/pages/contact-us.html">Contact Us</a></li>
+          <!-- <li class="text-gray-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+             </svg>
+          </li>
+          <li><a class="text-blue-600 capitalize text-lg font-bold hover:text-blue-500" href="#">Support</a></li> -->
+       </ul>
+      <!-- Desktop Menu Items End -->
+
+      <!-- Appointment button -->
+      <a href="/book-appointment.html" >
+        <button class="inline-flex rounded border-0 bg-blue-500 py-2 md:px-6 px-2 md:text-lg text-sm text-white hover:bg-blue-600 focus:outline-none">
+        Schedule Appointment</button>
+      </a>
+
+      <!-- Mobile Menu Icon Start -->
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-gray-700 p-3">
+           <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+           </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu Icon End -->
+    </nav>
+    
+  </header>
+  <!-- Header end -->
+
+  <!-- Mobile Menu Items Sidebar Start -->
+  <div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-600 opacity-80"></div>
+      <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+        <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <svg class="h-12" alt="logo" viewBox="0 0 100 100">
+                  <path d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z"></path>
+              </svg>
+            </a>
+            <button class="navbar-close">
+              <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+        </div>
+        <div>
+            <ul>
+              <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="index.html">Home</a>
+              </li>
+              <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="/pages/medical-services.html">What We Treat</a>
+              </li>
+              <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="/pages/about-us.html">About Us</a>
+              </li>
+              <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="/pages/contact-us.html">Contact Us</a>
+              </li>
+              <!-- <li class="mb-1">
+                  <a class="block p-4 text-lg font-semibold text-blue-700 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Support</a>
+              </li> -->
+            </ul>
+            <div class="pt-6">
+              <a class="block px-4 py-3 mb-2 leading-loose text-center text-lg font-semibold text-white bg-blue-700 hover:bg-blue-50 hover:text-blue-800 hover:border-2 hover:border-blue-500 rounded-xl" href="/book-appointment.html">Book Appointment</a>
+            </div>
+        </div>
+        <div class="mt-auto">
+            
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © 2021</span>
+            </p>
+        </div>
+      </nav>
+  </div>
+  <!-- Mobile Menu Items Sidebar End -->
+
+    <!--body content start-->
+
+    <section class="body-font text-gray-600">
+      <div class="container mx-auto flex flex-col px-5 py-24">
+        <div class="mx-auto">
+          <div class="flex flex-col rounded-lg bg-blue-50 sm:flex-row">
+            <div class="p-5 text-center sm:w-1/3">
+              <div
+                class="inline-flex h-20 w-20 items-center justify-center rounded-full bg-gray-200 text-gray-400"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="h-10 w-10"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex flex-col items-center space-y-5">
+                <h1 class="text-2xl font-medium text-gray-900">
+                  Ear Conditions Diagnosis & Treatments
+                </h1>
+                <div class="h-1 w-12 rounded bg-blue-500"></div>
+                <button class="inline-flex rounded border-0 bg-blue-500 py-2 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none sm:mx-auto">
+                  Book Appointment
+                </button>
+                <!-- <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> -->
+              </div>
+            </div>
+            <div class="flex flex-col justify-center space-y-5 border-t border-gray-200 py-5 px-5 text-center sm:mt-0 sm:w-2/3 sm:border-t-0 sm:text-left">
+              <p class="text-lg leading-relaxed">
+                Patients of all ages, from infants to the elderly, are affected
+                by ENT problems. Our staff at Ahmedabad Health Physicians:
+                Advanced ENT Services is here to help you with whatever issues
+                you or a loved one may be facing.
+              </p>
+              <p class="text-lg leading-relaxed">
+                Our otolaryngologists deliver high-quality care close to
+                patients' homes. Ear, nose, and throat specialists use
+                microscopic, endoscopic, and laser procedures to restore hearing
+                and healthy function to the ear, nose, and throat systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- List of conditions -->
+    <section class="body-font overflow-hidden text-gray-600">
+      <div class="container mx-auto px-5 py-24 space-y-10">
+        <h2 class="mb-2 text-2xl font-medium text-gray-900 text-center">
+          List of Ear Conditions
+        </h2>
+        <div class="-my-8 divide-y-2 divide-gray-100">
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition1">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Ear cleaning (Earwax Removal)
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                The earwax that protects the ear canal from water, foreign
+                bodies, blows, and infections can sometimes build up and harden,
+                obstructing the ear canal. This is how the plugs that cause the
+                problems are made. Earwax removal is available at Ahmedabad's
+                ENT hospital.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition2">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Ear Pain
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                It can be caused by a variety of factors, including earwax
+                buildup, ear pressure changes, ear infection, swimmer's ear, and
+                more. Because of the location of nerves in the face and neck,
+                referred pain from a tooth or the jaw might be mistaken for ear
+                pain. The doctors at the Ahmedabad ENT Clinic can identify and
+                treat the cause of earache in both children and adults.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition3">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Deafness
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                Deafness has set in when a person cannot understand speech
+                through hearing, even when sound is magnified. Hearing loss can
+                be treated by surgery or a hearing device, depending on the
+                severity of the case. To evaluate the severity of deafness,
+                consult a doctor.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition4">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Hearing loss
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                It is a condition in which a person's ability to hear sounds in the same way as other people is impaired. It can be caused by a variety of things, including work-related noises, leisure noises, or illness. Make an appointment with Ahmedabad ENT Clinic to determine the source of hearing loss in both children and adults and to receive treatment.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition5">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Sudden hearing loss
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                It's a sudden, inexplicable loss of hearing that can happen all at once or over a few days. It happens when anything goes wrong with the inner ear's sensory organs. Only one ear is frequently affected by sudden deafness. The degree of hearing loss is determined by how much louder the loudness must be before they can perceive a sound. This condition will be treated at the Ahmedabad ENT Clinic.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition6">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Dizziness
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                It can be caused by anything that affects the inner ear, nerves, or vestibular system. Dizziness might be caused by a block of earwax, a cold, or blowing your nose very loudly, according to the doctor. Dizziness and vertigo are prevalent symptoms in many people, and they can be caused by both neurological and psychiatric issues. Consult a doctor for treatment if you are showing signs of dizziness.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition7">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Facial weakness or paralysis
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                It's a problem with the nerve that regulates the movement of the facial muscles. Damage to this nerve produces muscle weakness or paralysis, which means you won't be able to utilize your muscles at all.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition8">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Ear discharge
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                It can be caused by a number of different factors. Earwax is the most prevalent type of ear discharge, and it keeps the ear clean and healthy. Blood, clear fluid, and pus are examples of other types of outflow and discharge. These symptoms could indicate a ruptured eardrum or an ear infection. Anyone who develops ear discharge following a head injury should seek medical help as soon as possible. An infection might cause a discharge from the ear. Doctors might use a test called tympanometry to assess the health of the middle ear.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition9">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Bleeding from Ear
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                We must consider that minor causes could result in this circumstance, so be calm and consult an expert to determine the source of the bleeding. A tiny ear injury or cut might result in a small amount of blood leaking from the ear canal. If a person's eardrum has ruptured, blood, pus, or clear fluid may pour from the ear.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="condition10">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Chronic otitis media
+              </h3>
+            </div>
+            <div class="md:flex-grow">
+              <p class="leading-relaxed">
+                The most common ear condition, especially in children, is otitis media. When extra mucus obstructs the Eustachian tube, fluid from the middle ear, for example, does not drain and accumulates, eventually getting infected and causing inflammation of the cavity just behind the eardrum. Because they are the most prevalent cause of this hearing loss, the most typical treatment is one based on antibiotics to address the infection, which is usually accompanied by mucolytics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- List of treatments -->
+    <section class="body-font overflow-hidden text-gray-600">
+      <div class="container mx-auto px-5 py-24 space-y-10">
+        <h2 class="mb-2 text-2xl font-medium text-gray-900 text-center">
+          List of Ear Treatments & Surgeries
+        </h2>
+        <div class="-my-8 divide-y-2 divide-gray-100">
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment1">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Acoustic neuroma surgery (Vestibular Schwannoma)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                The surgical operation performed to remove a tumor from the inner ear canal is known as acoustic neuroma surgery. A tumor in this location might compress the cochlear nerve (the hearing nerve), resulting in hearing loss and possibly tinnitus in the patient (a ringing or ringing in the ear). They may experience vertigo, eyesight, and balance issues. Surgical intervention is used to remove the tumor. Approaches such as translabyrinthine, middle fossa, or retrosigmoid may also be investigated.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment2">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Aural Atresia Construction (External Ear Canal Surgery)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                An ear canal that is closed or undeveloped at birth is referred to as aural atresia. The surgical building of an ear canal and an eardrum restores inner ear hearing loss in aural atresia repair. A tiny skin graft from the patient is used to line the newly constructed ear canal.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment3">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Cholesteatoma Surgery (Eardrum, Middle Ear Cyst)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Cholesteatomas are cysts that form behind the eardrum in the middle section of the ear, where sound waves are transmitted from the eardrum to the inner ear via the chain of ossicles. These cysts can destroy the bones of the middle ear if they develop large enough. If left untreated, this can result in hearing loss. Mastoidectomy is a surgical procedure that can be used to eliminate this tumor.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment4">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Cochlear implant surgery
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Unlike hearing aids, cochlear implants are implanted through surgery.Cochlear implants are small electronic devices that help people who are hearing impaired. Find out what a cochlear implant surgery is like. It is used by people who suffer from severe to profound hearing loss (decreased hearing ability). Cochlear implants are recommended for people for whom hearing aids offer little benefit.Cochlear implants may well be used in adults, children, and even babies who were born with this impairment , or manifested it after learning to speak.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment5">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Congenital atresia repair
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Congenital atresia repair is a reconstructive procedure that generally necessitates numerous evaluations, tests, and surgical phases. It entails removing bone and opening up the bones of the ears. The lost ear components are then replaced with skin grafts, which are usually taken from the thigh or lower belly.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment6">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                CSF Otorrhea Repair (Cerebrospinal Fluid Leak)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                IRupture in the eardrum or an abnormality in the external ear canal causes otorrhea. When the leaking is caused by trauma or previous ear surgery, this is frequently the case. The fluid goes down the eustachian tube and manifests as a distinct rhinorrhea if there is no such abnormality. In order to stop the leak, surgical treatment requires reconstructing the dura and tegmen.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment7">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Drainage of Ear Canal and Ear Pinna (Outer Ear)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Ear drainage can be caused by a variety of factors, including an ear infection, a burst eardrum, or an ear tube that causes fluid to accumulate in an abscess.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment8">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Abscess/Hematoma
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                An aural hematoma is a blood clot that forms between the ear's cartilage and the skin. It usually starts as a self-inflicted injury caused by your pet scratching and shaking his head. All conditions that induce otitis externa are among the underlying causes (infection of the external ear canal).
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment9">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Labyrinthectomy
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                It is a surgical operation involving the temporal bone that is used to treat persistent and refractory vertigo as well as Ménière's disease. The neuroepithelial components of the semicircular canals and vestibule are surgically removed during this treatment (destructive).
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment10">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Myringotomy and ventilation tubes
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Myringotomy with ventilation tube insertion is a surgical operation that involves making an incision in the tympanic membrane (typically in a radial direction) to get access to the middle ear, suctioning (cleaning) the fluid inside, and then inserting a device called a vent tube.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment11">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Otologic laser surgery
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                The OmniGuide BeamPath® OTO System is a versatile CO2 laser system that allows for precision otologic surgery. The BeamPath OTO's intuitive hand-held design, unlike the line-of-sight CO2 laser, allows the surgeon to flexibly guide CO2 laser energy at any angle and traverse through important middle ear anatomy.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment12">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Particle repositioning maneuver
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                BPPV, or benign paroxysmal positional vertigo, is a condition that causes dizziness when you move your head. The canalith repositioning procedure can help. Head motions are used to transfer the canalith particles (otoconia) in your inner ear that induce dizziness to a place of your ear where they won't produce dizziness.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment13">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Stapedectomy
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                It is a significant microscopic surgery for the treatment of otosclerosis (disease by which the stapes of the ear becomes fixed, which under normal conditions is a bone that should move freely for the ear to work properly).
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment14">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Tympanoplasty
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                A tympanoplasty is a procedure that involves repairing the eardrum. The eardrum is a tiny membrane of tissue that responds to sound by vibrating. When the eardrum (or tympanic membrane) has a hole that won't close on its own, doctors perform this procedure. They're designed to improve hearing and keep water out of the middle ear.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment15">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Endolymphatic Sac Decompression (Ménière's Disease Treatment)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                When Meniere's disease is intractable with medication or is progressing, endolymphatic sac decompression surgery is a conservative strategy to address vestibular and cochlear symptoms.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment16">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Excision of Postauricular Mass (Growth Outside the Ear)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Excision is a type of surgery that involves removing a mass, such as a tumor. Excision can be used to diagnose or treat a condition. It's possible that removal is the only treatment you'll need, or that it'll be part of your treatment strategy.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment17">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Excision of a Preauricular Cyst (Pit or Dimple Outside the Ear)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                surgery to remove a hole in front of the ear that has been present since birth (congenital) and is connected to a small duct that forms a cyst with the ability to create mucus. It can be unilateral or bilateral, and it frequently affects other family members (hereditary).
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment18">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Exostoses Canalplasty (Surfer's Ear Treatment)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                A benign hyperproliferation of the bony part that makes up the external auditory canal is known as an exostosis. Although some writers claim that exposure to cold water might develop this sort of disease, which is why it is sometimes known as surfer's or diver's ear, the etiology is still unknown. Exostoses are treated surgically, using canalplasty (ear canal surgery) or an incision behind the ear (in more difficult cases)
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment19">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Facial Nerve Decompression
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Decompression of the facial nerves is a difficult process. It entails removing the restricting bone from the seventh cranial nerve. Because the nerve travels in a zigzag pattern from the brainstem to the face, this is difficult. It passes around the inner ear structures through the temporal bone.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment20">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Fistula Repair
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                A perilymph fistula is a tear in the tissue that connects the middle and inner ear. Extreme pressure changes to the ear, such as those seen in head trauma, scuba diving, childbirth, and weightlifting, can cause the fistula to form. A soft-tissue graft placed over the opening can be used to close the fistula. Typically, the treatment is carried out under general anesthesia.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment21">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Glomus Tumor Surgery (Middle Ear Vascular Tumor)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                The most common benign tumor in the middle ear is a glomus tumor. Middle ear rhabdomyosarcoma is a rare tumor that primarily affects youngsters, with over half of all instances detected in children under the age of ten. The majority of ear and temporal bone cancers require surgical treatment, which will vary depending on histopathological characteristics, their location and the affected structures.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment22">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Hearing Loss Surgery
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Hearing loss can be caused by a variety of factors, and therapy is frequently determined by the reason. Cochlear implants, implantable hearing aids, pressure equalization tubes, laser stapedectomy, ossiculoplasty, and other operations, all of which are discussed on this page, are among the most common surgical interventions.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment23">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Laser Stapedotomy (Treatment of Otosclerosis and the Stapes Bone)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Stapedectomy and stapedotomy are surgical procedures used to treat otosclerosis and otospongiosis. This disorder is caused by the fixation and immobilization of one of the most significant elements that make up the chain of ossicles in the ear: the stirrup, and is one of the many causes of hearing loss (hearing loss) in people.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment24">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Mastoidectomy, Tympanomastoidectomy, Tympanoplasty with Mastoimdcw-80,60 lg:w-80nd Mastoid Obliteration (Correction of Mastoid Bowl Problems, Chronic Ear Infections, Cholesteatoma)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Cells in the hollow, air-filled areas of the skull behind the ear, inside the mastoid bone, are removed during surgery. Mastoid cells are the name for these cells. This procedure may include fixing a hole in the eardrum (tympanoplasty). A tympanomastoidectomy is a treatment that involves repairing the eardrum while also cleaning out the mastoid. Mastoid obliteration is a technique that involves sealing the mastoid bowl and re-creating a more normal ear canal for patients who have recurring mastoid bowl infections.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment25">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Myringoplasty (Eardrum Repair)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Myringoplasty is a surgical treatment that involves inserting a graft into the eardrum (tympanic membrane) to repair perforation or other damage.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment26">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Myringotomy for Fluid Drainage (With or Without Tube Placement)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                A myringotomy with the insertion of drainage tubes in the ear is a procedure used primarily in children who have recurrent acute otitis media or when mucus accumulates in the spaces of the middle ear, behind the eardrum, due to a malfunction of the Eustachian tube.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment27">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Ossicular Chain Reconstruction (Ossiculoplasty), Tympano-ossiculoplasty, Tympanoplasty-ossicular Chain Reconstruction (Conductive Hearing Loss Surgery)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                The malleus, incus, and stapes are the three bones that make up the middle ear, the eardrum and the inner ear are connected by these bones, which move together to transfer sound. Trauma, persistent infection, or cholesteatoma damage can cause one of the bones to break or dislocate, resulting in conductive hearing loss. In this case, a technique known as ossiculoplasty can be used to correct the issue. This is usually accomplished by re-establishing a link with a small prosthesis. The surgery is an outpatient treatment that is done at the patient's request. It is occasionally used with tympanoplasty (repair of a perforated eardrum).
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment28">
+            <div class="mb-6 px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Placement of Ear Tubes for Hearing, Drainage and Recurring Infections
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                Plastic tubes are used as vent tubes. Small holes are cut in the eardrums during the procedure, through which the tubes are inserted. Air can flow in and out of the ear through these apertures in the middle ear (the area behind the eardrum). This helps fluid that gathers behind the eardrum to exit and avoid infection by balancing the air pressure between the middle and outer ear.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment29">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Removal of a Foreign Body from the Ear Canal or Ear Lobe
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                This a surgery to remove a foreign body from the external ear canal or lobe. The procedure chosen is determined on the foreign body's shape, composition, and location in the canal.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap py-8 space-x-5 md:flex-nowrap" id="treatment30">
+            <div class="mb-6  px-3 flex md:flex-shrink-0 justify-center md:border-r flex-col md:mb-0 md:w-60 lg:w-80">
+              <h3 class="mb-2 text-xl font-medium text-blue-600 md:text-right">
+                Temporal Encephalocele Repair (Herniation of Brain into Mastoid)
+              </h3>
+            </div>
+            <div class="md:flex-grow flex items-center">
+              <p class="leading-relaxed">
+                The deficiency is caused by the cranial vault not being completely closed (cranium bifida). Encephaloceles are most commonly found in the midline, protruding anywhere along a line stretching from the occiput to the nasal passages, but they can also be asymmetric in the frontal or parietal areas. Encephaloceles can be repaired surgically.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+    <!--body content end-->
+
+    <!--footer start-->
+    <footer class="body-font text-gray-600">
+      <div
+        class="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start"
+      >
+        <div
+          class="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left"
+        >
+          <a
+            class="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start"
+          >
+            <div>
+              <a href="#"
+                ><img
+                  src="/assets/images/logo svg.svg"
+                  alt=""
+                  title=""
+                  class="mx-auto max-h-20"
+              /></a>
+            </div>
+          </a>
+        </div>
+        <div
+          class="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left"
+        >
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-gray-900"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-gray-900"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-gray-900"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-gray-900"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div
+          class="container mx-auto flex flex-col flex-wrap py-4 px-5 sm:flex-row"
+        >
+          <p class="text-center text-sm text-gray-500 sm:text-left">
+            © 2022 NilDevil —
+            <a
+              href="https://twitter.com/knyttneve"
+              rel="noopener noreferrer"
+              class="ml-1 text-gray-600"
+              target="_blank"
+              >@nilvaghela</a
+            >
+          </p>
+          <span
+            class="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start"
+          >
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
